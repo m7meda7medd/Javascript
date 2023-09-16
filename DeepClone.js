@@ -16,17 +16,15 @@ function DeepClone(obj)  // this fumction makes a deepclone from all datatypes i
   // if the Object is from type object 
   var Cloned_Obj = {} ;
   for (var key in obj)
-  { if (obj.hasOwnProperty(key))
-    {
+  { 
         Cloned_Obj[key] = DeepClone(obj[key]) ;
-    }
   }
   return Cloned_Obj ;
 
 
 }
 
-/*
+
 // for test
 const originalObject = {
     name: 'Mohamed',
@@ -43,4 +41,4 @@ const originalObject = {
   console.log(clonedObject) ;
   clonedObject["name"] = "AboKhalil" ;
   console.log(originalObject) ;
-  */
+  
